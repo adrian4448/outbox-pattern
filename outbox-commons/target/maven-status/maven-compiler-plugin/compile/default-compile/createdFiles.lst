@@ -1,0 +1,10 @@
+org/adrianm/model/repository/OutboxRepository.class
+org/adrianm/model/ApplicationContextHolder.class
+org/adrianm/model/Outbox$OutboxBuilder.class
+org/adrianm/model/service/OutboxService.class
+org/adrianm/model/OutboxModelListener.class
+org/adrianm/model/Outbox.class
+org/adrianm/model/OutboxEvent.class
+org/adrianm/model/service/OutboxServiceImpl.class
+org/adrianm/model/event/OutboxEventListener.class
+org/adrianm/model/annotations/OutboxTopic.class
