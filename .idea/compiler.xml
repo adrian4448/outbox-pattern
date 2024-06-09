@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="outbox-commons" />
+        <module name="scheduler-outbox" />
         <module name="random-project" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="outbox-commons" options="-parameters" />
       <module name="random-project" options="-parameters" />
+      <module name="scheduler-outbox" options="-parameters" />
     </option>
   </component>
 </project>

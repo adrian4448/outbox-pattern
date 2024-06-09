@@ -17,4 +17,9 @@ public class UserController implements UserResource {
     public User create(User user) {
         return userService.createUser(user);
     }
+
+    @Override
+    public void delete(Long id) {
+        userService.deleteUser(id);
+    }
 }

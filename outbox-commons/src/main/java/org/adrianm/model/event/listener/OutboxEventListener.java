@@ -20,6 +20,7 @@ public class OutboxEventListener implements ApplicationListener<OutboxEvent> {
                 .builder()
                 .topic(event.getTopic())
                 .messageContent(event.getMessageContent())
+                .eventType(event.getEventType())
                 .build();
 
         outboxService.createOutboxRegister(outbox);

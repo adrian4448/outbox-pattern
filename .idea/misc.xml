@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/random-project/pom.xml" />
         <option value="$PROJECT_DIR$/outbox-commons/outbox/pom.xml" />
         <option value="$PROJECT_DIR$/outbox-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/scheduler-outbox/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,11 +1,11 @@
 package org.adrianm.model;
 
-import com.vladmihalcea.hibernate.type.json.JsonBinaryType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.adrianm.model.enums.EventType;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
@@ -27,8 +27,15 @@ public class Outbox {
     @Column
     private String topic;
 
-    @Column(columnDefinition = "jsonb")
+    @Column
     private String messageContent;
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    private EventType eventType;
+
+    @Column
+    private boolean eventCreated;
 
     @CreatedDate
     @Column
@@ -37,4 +44,8 @@ public class Outbox {
     @LastModifiedDate
     @Column
     private LocalDateTime updatedAt;
+
+    public void eventCreated() {
+        this.eventCreated = true;
+    }
 }

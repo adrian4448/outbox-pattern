@@ -16,4 +16,9 @@ public class UserService {
     public User createUser(final User user) {
         return userRepository.save(user);
     }
+
+    @Transactional
+    public void deleteUser(final Long id) {
+        userRepository.deleteById(id);
+    }
 }
